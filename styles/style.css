@@ -1,1 +1,52 @@
 @charset "UTF-8";
+/*
+Paleta:
+
+Verde: #49a09d
+Lilás: #5f2c82
+*/
+
+:root {
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: var(--cor2);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+section {
+    position: absolute;
+    width: 250px;
+    height: 500px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px black;
+}
+
+div#img {
+    height: 40%;
+    background: var(--cor2) url(../img/lp.jpg) center bottom no-repeat ;
+    background-size: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+div#formulario {
+    
+}
