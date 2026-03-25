@@ -25,19 +25,29 @@
                     ambiente.</p>
                 <form id="formLogin">
                     <label for="iUser">
-                        <input type="email" name="user" id="iUser" placeholder="seu e-mail">
+                        <input type="email" name="user" id="iUser" placeholder="seu e-mail" >
                     </label>
                     <label for="iPass">
-                        <input type="password" name="pass" id="iPass" placeholder="sua senha">
+                        <input type="password" name="pass" id="iPass" placeholder="sua senha" minlength="8">
                     </label> <br>
-                    <input type="submit" value="Entrar"> <br>
-                    <button>Esqueci a senha</button>
+
+                    <button onclick="login()" id="entrar">Entrar</button><br>
+                    <button onclick="esqueciSenha()" id="esqueciaSenha">Esqueci a senha</button>
 
                 </form>
             </div>
         </section>
     </main>
+    <script>
+        function esqueciSenha() {
+            alert("Esqueceu a Senha!")
+        }
 
+        function login() {
+            nameUser = document.getElementById("iUser")
+            alert("Logado com e-mail: " + nameUser.value)
+        }
+    </script>
 </body>
 
 </html>

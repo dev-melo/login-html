@@ -30,8 +30,8 @@ main {
 
 section {
     position: absolute;
-    width: 250px;
-    height: 500px;
+    width: 270px;
+    height: 580px;
     background-color: #fff;
     left: 50%;
     top: 50%;
@@ -42,11 +42,81 @@ section {
 
 div#img {
     height: 40%;
-    background: var(--cor2) url(../img/lp.jpg) center bottom no-repeat ;
+    background: var(--cor2) url(../img/lp.jpg) center bottom no-repeat;
     background-size: cover;
     border-radius: 25px 25px 0px 0px;
 }
 
 div#formulario {
+    padding: 10px;
+}
+
+div#formulario h1 {
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 2.4em;
+}
+
+div#formulario p {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 0.9em;
+    padding: 5px;
+}
+
+form>label>input {
+    background: var(--cor1);
+    border: 3px solid var(--cor2);
+    height: 36px;
+    width: 99%;
+    border-radius: 7px;
+    margin-bottom: 4px;
+}
+
+form>label>input:focus {
+    background-color: white;
+}
+
+input#iUser::before {
+    content: "asd";
+}
+
+input#iPass {
     
+}
+
+
+
+button {
+    height: 40px;
+    width: 101%;
+    border-radius: 7px;
+    border: 0px;
+    margin-bottom: 4px;
+    font-size: medium;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button#entrar {
+    background-color: var(--cor1);
+    color: white;
+}
+
+button#entrar:hover {
+    background-color: #234c4b;
+    color: white;
+}
+
+button#esqueciaSenha {
+    background-color: white;
+    border: 1px solid var(--cor1);
+    color: var(--cor1)
+}
+
+button#esqueciaSenha:hover {
+    background-color: #6be3e1;
 }
