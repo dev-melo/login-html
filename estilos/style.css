@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*
+Paleta:
+
+Verde: #49a09d
+Lilás: #5f2c82
+*/
+
+:root {
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

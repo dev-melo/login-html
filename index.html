@@ -5,49 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 
 <body>
-
-    <main>
-        <section>
-            <div id="img">
-
-            </div>
-
-
-
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu
-                    ambiente.</p>
-                <form id="formLogin">
-                    <label for="iUser">
-                        <input type="email" name="user" id="iUser" placeholder="seu e-mail" >
-                    </label>
-                    <label for="iPass">
-                        <input type="password" name="pass" id="iPass" placeholder="sua senha" minlength="8">
-                    </label> <br>
-
-                    <button onclick="login()" id="entrar">Entrar</button><br>
-                    <button onclick="esqueciSenha()" id="esqueciaSenha">Esqueci a senha</button>
-
-                </form>
-            </div>
-        </section>
-    </main>
-    <script>
-        function esqueciSenha() {
-            alert("Esqueceu a Senha!")
-        }
-
-        function login() {
-            nameUser = document.getElementById("iUser")
-            alert("Logado com e-mail: " + nameUser.value)
-        }
-    </script>
 </body>
 
 </html>
