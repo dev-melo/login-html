@@ -28,22 +28,27 @@ html {
 }
 
 main {
-    position: relative;
+    /*position: relative;*/
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 section#login {
-    position: absolute;
+
+    /*position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%;*/
     overflow: hidden;
     background-color: white;
     width: 250px;
     height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .45);
-    transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
 
     transition: width 0.2s, height 0.2s;
     transition-timing-function: ease;
